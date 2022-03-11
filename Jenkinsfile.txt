@@ -23,7 +23,7 @@ pipeline{
 			
 			post{
 				always{
-					junit 'C:/Users/famMb/OneDrive/Dokumente/jenkins/TEST-*.xml'
+					junit '**/target/surefire-reports/TEST-*.xml'
 				}
 			}
 		}
